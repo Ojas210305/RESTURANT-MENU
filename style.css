@@ -1,0 +1,265 @@
+/* Import Google Fonts for a more formal and elegant look */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+/* Reset and basic styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif; /* Formal serif font */
+    color: #333;
+    background-color: #965b5b;
+}
+
+/* Header styling */
+header {
+    background-image: url('images/header-background.jpg'); /* Replace with your header image path */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif; /* Elegant serif font */
+    font-weight: 700; /* Bold text */
+    font-size: 3em; /* Prominent font size */
+    margin: 20px 0;
+    color: #eceaea; /* Light color for better readability */
+}
+
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif; /* Elegant serif font for navigation links */
+    font-weight: 700; /* Bold text */
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main content styling */
+main {
+    padding: 20px;
+}
+
+/* About Us section */
+#about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Reduced height */
+    padding: 20px; /* Add some padding for spacing */
+}
+
+.dropdown-content {
+    max-width: 400px; /* Reduced width */
+    margin: 0 auto;
+    text-align: center; /* Center the text inside */
+    padding: 20px; /* Add padding inside the content box */
+    border: 1px solid #ccc; /* Optional: Add a border for better visual separation */
+    border-radius: 8px; /* Optional: Rounded corners for a modern look */
+    background-color: #f6f4f4; /* Optional: Light background color for better readability */
+}
+
+h2 {
+    font-family: 'Playfair Display', serif; /* Elegant serif font for section headings */
+    font-weight: 700; /* Bold heading */
+    font-size: 1.8em; /* Adjust font size */
+    margin-bottom: 10px; /* Space below the heading */
+    color: #333; /* Dark color for better readability */
+}
+
+p {
+    font-family: 'Merriweather', serif; /* Formal serif font for paragraphs */
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+/* Menu sections styling */
+.menu-sections {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.menu-section {
+    flex: 1 1 30%; /* Each section takes up approximately 30% of the container width */
+    background-color: #ffffff; /* White background for clarity */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+/* Flexbox Layout for Menu Items */
+.menu-item {
+    flex: 1 1 200px; /* Each item takes up at least 200px width but can grow or shrink */
+    background-color: #ffffff; /* White background for items */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.menu-item img {
+    width: 100%; /* Scale the image to fit the container width */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 8px; /* Optional: Rounds the corners of the image */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.menu-item h3 {
+    font-family: 'Playfair Display', serif; /* Elegant serif font for item names */
+    font-weight: 700; /* Bold text */
+    font-size: 1.5em; /* Larger font size for item names */
+    margin: 10px 0;
+    color: #333; /* Dark color for better readability */
+}
+
+.menu-item p {
+    font-family: 'Merriweather', serif; /* Formal serif font for descriptions */
+    font-size: 1em;
+    margin: 0;
+}
+
+.menu-item span {
+    font-family: 'Playfair Display', serif; /* Elegant serif font for prices */
+    font-size: 1.2em;
+    font-weight: 700; /* Bold text */
+    color: #e03c31; /* Highlight color */
+}
+
+/* Specific Styling for Sections */
+#appetizers .menu-item img,
+#main-courses .menu-item img,
+#desserts .menu-item img {
+    max-width: 150px; /* Limits the width of images */
+    max-height: 100px; /* Limits the height of images */
+}
+
+#drinks .menu-item img {
+    max-width: 120px; /* Further limits the width of images for a more compact look */
+    max-height: 100px; /* Further limits the height of images */
+}
+
+/* Flexbox Layout for Drinks */
+#drinks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/* Specific Styling for Contact section */
+#contact {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#contact address p {
+    margin: 0;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center; /* Center-aligns text and inline elements */
+    font-family: 'Merriweather', serif; /* Formal serif font for footer */
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center-aligns all child elements */
+}
+
+.footer-section {
+    flex: 1 1 30%;
+    margin-bottom: 20px;
+    text-align: center; /* Center-aligns text and inline elements within this section */
+}
+
+.footer-section h3 {
+    font-family: 'Playfair Display', serif; /* Elegant serif font for footer section headings */
+    font-weight: 700; /* Bold text */
+    font-size: 1.5em; /* Font size for section headings */
+    margin-top: 0;
+    color: #fff; /* Light color for better readability */
+}
+
+.footer-section p {
+    font-family: 'Merriweather', serif; /* Formal serif font for footer text */
+    font-size: 1em;
+    color: #fff; /* Light color for better readability */
+}
+
+.social-media {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center-aligns list items */
+    gap: 10px; /* Spacing between icons */
+}
+
+.social-media li {
+    margin: 0;
+}
+
+.social-media a img {
+    width: 24px; /* Icon size */
+    height: 24px; /* Icon size */
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin: 0;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif; /* Elegant serif font for footer links */
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9em;
+    font-family: 'Merriweather', serif; /* Formal serif font for bottom text */
+}
